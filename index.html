@@ -1,46 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<title>Abuja CAC Registration</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abuja CAC Registration Services | CAC Registration Support</title>
+<meta name="description" content="Abuja CAC Registration Services provides private support for Business Name, Company, Incorporated Trustee/NGO and post-registration services in Abuja.">
+<style>
+:root{--navy:#062653;--blue:#0d62d6;--green:#08b85b;--dark:#071a36;--light:#f5f9ff;--text:#18365f;--muted:#60728d;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.55}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 2px 16px #001a3b14}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:54px;height:54px;border-radius:50%;background:linear-gradient(145deg,#08783f,#0bb65c);display:grid;place-items:center;color:#fff;font-weight:900;font-size:12px;border:3px solid #e7fff0}.brand b{display:block;font-size:21px;line-height:1.05;color:var(--navy)}.brand span{font-size:12px;color:#4f6787;letter-spacing:.6px}
+nav{display:flex;gap:25px;font-weight:700;font-size:14px}nav a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:30px;padding:14px 23px;font-weight:800;cursor:pointer}.btn-green{background:var(--green);color:#fff}.btn-outline{border:2px solid #fff;color:#fff;background:transparent}.btn-blue{background:var(--blue);color:#fff}
+.hero{background:linear-gradient(120deg,#062653 0%,#0d62d6 58%,#0a9e61 140%);color:#fff;padding:78px 0 72px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;right:-120px;top:-150px;width:520px;height:520px;border-radius:50%;background:#ffffff12}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;position:relative;z-index:1}
+.badge{display:inline-block;background:#ffffff18;border:1px solid #ffffff40;padding:8px 15px;border-radius:22px;font-weight:700;font-size:13px}.hero h1{font-size:clamp(40px,6vw,68px);line-height:.98;margin:18px 0}.hero h1 span{color:#43ed8a}.hero p{font-size:18px;max-width:620px;color:#eef6ff}.checks{display:flex;gap:18px;flex-wrap:wrap;margin:25px 0}.checks span{font-weight:700;font-size:14px}.checks span:before{content:"✓";display:inline-grid;place-items:center;width:21px;height:21px;margin-right:7px;border-radius:50%;background:var(--green)}
+.hero-card{min-height:340px;border-radius:26px;background:linear-gradient(145deg,#ffffff22,#ffffff08);border:1px solid #ffffff40;display:flex;align-items:center;justify-content:center;padding:30px;text-align:center;backdrop-filter:blur(4px)}.hero-card h2{font-size:38px;margin:0 0 10px}.hero-card p{font-size:16px}
+section{padding:72px 0}.section-tag{color:#08a951;font-weight:900;font-size:13px;letter-spacing:1px}.section-title{font-size:40px;color:var(--navy);margin:8px 0 12px;line-height:1.1}.section-intro{color:var(--muted);max-width:680px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}.card{background:#fff;border:1px solid #dce8f6;border-radius:16px;padding:25px;box-shadow:0 8px 30px #0a32670d}.icon{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:#eaf3ff;color:var(--blue);font-size:25px;font-weight:900;margin-bottom:18px}.card h3{margin:0 0 8px;color:var(--navy)}.card p{color:var(--muted);font-size:14px}
+.process{background:var(--light)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:30px}.step{text-align:center}.step-num{width:55px;height:55px;margin:auto;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-weight:900;font-size:20px}.step h3{color:var(--navy);margin-bottom:4px}.step p{font-size:14px;color:var(--muted)}
+.req{background:#fbfdff}.req-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}.req-card{border:1px solid #d8e7f5;border-radius:16px;padding:25px;background:#fff}.req-card h3{color:var(--navy);margin-top:0}.req-card ul{padding-left:20px;margin-bottom:0}.req-card li{margin:9px 0;color:#405675;font-size:14px}.req-card li::marker{color:var(--green)}
+.notice{margin-top:20px;padding:15px 18px;border-radius:12px;background:#eafaf2;border-left:4px solid var(--green);color:#315d48;font-size:14px}
+.contact{background:var(--dark);color:#fff}.contact .section-title{color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}.contact-box{background:#ffffff0d;border:1px solid #ffffff20;border-radius:18px;padding:28px}.contact-row{display:flex;gap:14px;margin:18px 0}.contact-row strong{display:block}.contact-row span{color:#c8d6e9;font-size:14px}
+footer{background:#04142b;color:#b7c6db;padding:25px 0;font-size:13px}.footer-flex{display:flex;justify-content:space-between;gap:20px}.disclaimer{margin-top:12px;color:#9fb0c7}
+@media(max-width:900px){nav{display:none}.hero-grid,.contact-grid{grid-template-columns:1fr}.cards,.req-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.nav{min-height:70px}.brand b{font-size:17px}.brand span{font-size:10px}.hero{padding:55px 0}.hero h1{font-size:45px}.cards,.req-grid,.steps{grid-template-columns:1fr}.section-title{font-size:32px}.btn{width:100%;margin-bottom:8px}.checks{display:block}.checks span{display:block;margin:10px 0}.footer-flex{display:block}}
+</style>
 </head>
 <body>
+<header>
+<div class="container nav">
+<a class="brand" href="#home"><div class="logo">CAC</div><div><b>Abuja CAC<br>Registration Services</b><span>FAST • RELIABLE • PROFESSIONAL</span></div></a>
+<nav><a href="#home">Home</a><a href="#services">Services</a><a href="#requirements">CAC Requirements</a><a href="#compliance">SCUML & Tax</a><a href="#process">How It Works</a><a href="#contact">Contact</a></nav>
+<a class="btn btn-green" href="https://wa.me/2347073552208?text=Hello%20Abuja%20CAC%20Registration%20Services%2C%20I%20need%20help%20with%20CAC%20registration.">WhatsApp</a>
+</div>
+</header>
 
-  <h1>Abuja CAC Registration</h1>
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div>
+<div class="badge">Private CAC Registration Support Services</div>
+<h1>Abuja CAC<br><span>Registration Services</span></h1>
+<p>Get professional support with Business Name, Company, Incorporated Trustee/NGO and post-registration processes in Nigeria.</p>
+<div class="checks"><span>Fast Support</span><span>Reliable Guidance</span><span>Transparent Service</span></div>
+<a class="btn btn-green" href="https://wa.me/2347073552208?text=Hello%20Abuja%20CAC%20Registration%20Services%2C%20I%20want%20to%20start%20my%20registration.">Chat on WhatsApp →</a>
+<a class="btn btn-outline" href="#services">View Services →</a>
+</div>
+<div class="hero-card"><div><h2>Your Business,<br>Our Priority</h2><p>We guide you through the registration process and help you understand the documents and information required.</p><a class="btn btn-green" href="#requirements">See Requirements</a></div></div>
+</div>
+</section>
 
-  <p>Professional CAC registration and business support services.</p>
+<section id="services">
+<div class="container">
+<div class="section-tag">OUR SERVICES</div><h2 class="section-title">Abuja CAC Registration Services</h2><p class="section-intro">Choose the service you need and contact us for guidance on the current CAC process and applicable fees.</p>
+<div class="cards">
+<div class="card"><div class="icon">▣</div><h3>Business Name Registration</h3><p>Support with name availability, proprietor details, documents and submission.</p></div>
+<div class="card"><div class="icon">▥</div><h3>Limited Liability Company</h3><p>Support with company registration information and required supporting documents.</p></div>
+<div class="card"><div class="icon">♧</div><h3>NGO / Incorporated Trustee</h3><p>Guidance for trustee details, constitution and other required documents.</p></div>
+<div class="card"><div class="icon">▤</div><h3>Post-Registration Services</h3><p>Support for eligible changes, certified documents and other post-registration processes.</p></div>
+<div class="card"><div class="icon">✓</div><h3>SCUML Registration</h3><p>Support for eligible businesses that fall under SCUML's designated non-financial business and profession categories.</p></div>
+<div class="card"><div class="icon">₦</div><h3>Tax / TIN Support</h3><p>Guidance with tax registration information, TIN-related processes and tax compliance documentation where applicable.</p></div>
+</div>
+</div>
+</section>
 
-  <button class="menu-toggle">Menu</button>
+<section class="process" id="process">
+<div class="container"><div class="section-tag">HOW IT WORKS</div><h2 class="section-title">Simple 4-Step Process</h2>
+<div class="steps">
+<div class="step"><div class="step-num">1</div><h3>Contact Us</h3><p>Reach us by WhatsApp, phone or email.</p></div>
+<div class="step"><div class="step-num">2</div><h3>Submit Information</h3><p>Provide the information and documents relevant to your registration type.</p></div>
+<div class="step"><div class="step-num">3</div><h3>We Process</h3><p>We assist with the CAC application process and queries.</p></div>
+<div class="step"><div class="step-num">4</div><h3>Receive Documents</h3><p>Receive your approved electronic registration documents when available.</p></div>
+</div>
+</div>
+</section>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<section class="req" id="requirements">
+<div class="container"><div class="section-tag">CAC REQUIREMENTS</div><h2 class="section-title">CAC Registration Requirements</h2><p class="section-intro">Requirements depend on the registration type. The list below summarizes common requirements from CAC guidance; CAC may request additional information or documents.</p>
+<div class="req-grid">
+<div class="req-card"><h3>Business Name</h3><ul>
+<li>Proposed/approved business name</li><li>Proprietor details and address</li><li>Valid means of identification</li><li>Recent passport photograph</li><li>Proprietor signature</li><li>Phone number and email address</li><li>Other information requested by CAC</li>
+</ul></div>
+<div class="req-card"><h3>Limited Liability Company</h3><ul>
+<li>Approved/reserved company name</li><li>Company type and principal business activity</li><li>Registered office address</li><li>Director/shareholder/PSC particulars</li><li>Valid identification and supporting documents as applicable</li><li>Company email and phone details</li><li>Applicable statutory documents/fees</li>
+</ul></div>
+<div class="req-card"><h3>Incorporated Trustee / NGO</h3><ul>
+<li>Reserved organisation name</li><li>Constitution of the organisation</li><li>Trustee names, addresses and details</li><li>Valid identification for trustees</li><li>Passport photographs for trustees</li><li>Trustee declaration forms</li><li>Meeting minutes and newspaper publication where required</li>
+</ul></div>
+</div>
+<div class="notice"><strong>Important:</strong> Requirements can vary by entity and circumstances. We will confirm the current requirements before you submit documents. For official requirements and filing, CAC's current portal and guidance remain the authoritative source.</div>
+</div>
+</section>
 
-  <section id="home">
-    <h2>Professional CAC Services</h2>
-    <p>Fast and reliable CAC registration and business support services.</p>
-  </section>
+<section>
+<div class="container"><div class="section-tag">WHY CHOOSE US</div><h2 class="section-title">Trusted. Professional. Transparent.</h2><p class="section-intro">Private registration support focused on clear communication and helping clients understand the process.</p></div>
+</section>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <p>Business Name Registration</p>
-    <p>Limited Liability Company Registration</p>
-    <p>NGO/Trustee Registration</p>
-  </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Get in touch with us for assistance.</p>
-  </section>
+<section id="compliance">
+<div class="container">
+<div class="section-tag">SCUML & TAX SUPPORT</div>
+<h2 class="section-title">SCUML & Tax Registration Support</h2>
+<p class="section-intro">These are separate compliance services and are not automatically required for every CAC registration.</p>
+<div class="req-grid">
+<div class="req-card"><h3>SCUML Registration</h3>
+<p>SCUML registration applies to businesses and professions that fall within the categories regulated by the Special Control Unit Against Money Laundering (SCUML).</p>
+<ul>
+<li>Requirements depend on the business category and entity type.</li>
+<li>Common documents can include CAC registration documents and Tax Identification Number (TIN).</li>
+<li>Additional sector-specific evidence may be required.</li>
+<li>We can help identify the applicable SCUML requirements before submission.</li>
+</ul>
+</div>
+<div class="req-card"><h3>Tax / TIN Support</h3>
+<p>We can help clients understand the tax-registration information needed after or alongside business registration.</p>
+<ul>
+<li>Tax Identification Number (TIN) / taxpayer registration information</li>
+<li>CAC registration number and business/company details</li>
+<li>Business address, phone and email details</li>
+<li>Nature of business and other tax-registration information</li>
+</ul>
+</div>
+<div class="req-card"><h3>Tax Clearance / Certificate</h3>
+<p>A Tax Clearance Certificate (TCC) is different from a TIN. A TCC may be required for particular transactions or compliance purposes and is subject to the applicable tax authority's requirements.</p>
+<ul>
+<li>We can provide guidance on the appropriate tax document for your situation.</li>
+<li>We do not describe a TCC as a universal CAC-registration requirement.</li>
+<li>Current tax-authority requirements should be confirmed before filing.</li>
+</ul>
+</div>
+</div>
+<div class="notice"><strong>Important:</strong> SCUML is not a requirement for every business. Tax documents are also not one universal requirement for every CAC registration. Requirements depend on the entity, business activity and applicable regulatory rules.</div>
+</div>
+</section>
 
-  <p>© <span id="year"></span> Abuja CAC Registration</p>
+<section class="contact" id="contact">
+<div class="container contact-grid">
+<div><div class="section-tag">GET IN TOUCH</div><h2 class="section-title">Contact Us Today</h2><p>Ready to start? Send us a WhatsApp message or email and tell us the CAC service you need.</p>
+<a class="btn btn-green" href="https://wa.me/2347073552208?text=Hello%20Abuja%20CAC%20Registration%20Services%2C%20I%20need%20CAC%20registration%20support.">Chat on WhatsApp →</a></div>
+<div class="contact-box">
+<div class="contact-row">📞 <div><strong>Phone / WhatsApp</strong><span>0707 355 2208</span></div></div>
+<div class="contact-row">✉️ <div><strong>Email</strong><span>abujacacregistrationamocitygit@gmail.com</span></div></div>
+<div class="contact-row">📍 <div><strong>Address</strong><span>No 14 Kogo 32 Cres, Bwari, Abuja 901101, Federal Capital Territory</span></div></div>
+</div>
+</div>
+</section>
+</main>
 
-  <script src="script.js"></script>
-
+<footer><div class="container"><div class="footer-flex"><strong>Abuja CAC Registration Services</strong><span>© 2026 All rights reserved.</span></div>
+<div class="disclaimer">We are a private service provider and are not the Corporate Affairs Commission (CAC), SCUML or a tax authority. CAC, SCUML and tax requirements, fees and processing timelines can change; confirm current official information with the relevant authority.</div></div></footer>
 </body>
 </html>
