@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abuja CAC Registration Services</title>
+<meta name="description" content="Abuja CAC Registration Services — professional support for Business Name, Limited Liability Company, Incorporated Trustee/NGO, SCUML and tax-related processes.">
+<style>
+:root{
+  --green:#006b4f;
+  --green2:#0aa66a;
+  --deep:#003d30;
+  --lime:#39d98a;
+  --ink:#0c2f3b;
+  --muted:#637984;
+  --cream:#f7fbf8;
+  --line:#dcebe5;
+  --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 15% 15%,rgba(57,217,138,.08),transparent 28%),
+    linear-gradient(180deg,#fff 0%,#f7fbf8 48%,#fff 100%);
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.topbar{
+  background:linear-gradient(90deg,#004d3a,#006b4f);
+  color:#fff;padding:10px 4.5%;
+  display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  font-size:13px;font-weight:600;
+}
+.topbar span{display:inline-flex;align-items:center;gap:8px}
+.nav{
+  position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);
+  backdrop-filter:blur(14px);border-bottom:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;padding:13px 4.5%;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{
+  width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(145deg,#0b875f,#004a38);color:#fff;font-weight:900;
+  border:3px solid #d9f3e8;box-shadow:0 5px 18px rgba(0,70,50,.16);
+}
+.brand strong{display:block;font-size:20px;line-height:1.05;color:#092f3b}
+.brand small{color:#607681;font-size:12px}
+.links{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:700}
+.links a:hover{color:var(--green2)}
+.wa{
+  background:linear-gradient(135deg,#08b86f,#008c58);color:#fff!important;
+  padding:12px 21px;border-radius:999px;box-shadow:0 8px 20px rgba(0,140,88,.22)
+}
+.hero{
+  min-height:570px;position:relative;overflow:hidden;color:#fff;
+  background:
+    linear-gradient(90deg,rgba(0,55,43,.96) 0%,rgba(0,77,59,.86) 36%,rgba(0,91,70,.46) 68%,rgba(0,45,35,.62) 100%),
+    radial-gradient(circle at 75% 25%,rgba(62,218,147,.32),transparent 25%),
+    linear-gradient(135deg,#004735,#0a8a65 52%,#083c34);
+}
+.hero:before{
+  content:"";position:absolute;inset:auto 0 0;height:45%;
+  background:
+    linear-gradient(180deg,transparent,#002f29),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.08) 0 3px,transparent 3px 38px);
+  opacity:.45;
+}
+.skyline{
+  position:absolute;right:-3%;bottom:0;width:58%;height:72%;opacity:.22;
+  background:
+    linear-gradient(90deg,transparent 0 7%,#d7fff0 7% 10%,transparent 10% 16%,
+    #d7fff0 16% 19%,transparent 19% 28%,#d7fff0 28% 32%,transparent 32% 39%,
+    #d7fff0 39% 42%,transparent 42% 50%,#d7fff0 50% 56%,transparent 56% 64%,
+    #d7fff0 64% 69%,transparent 69% 76%,#d7fff0 76% 82%,transparent 82%);
+  clip-path:polygon(0 70%,6% 70%,6% 44%,12% 44%,12% 61%,20% 61%,20% 28%,26% 28%,26% 53%,34% 53%,34% 8%,42% 8%,42% 50%,50% 50%,50% 22%,58% 22%,58% 55%,67% 55%,67% 13%,75% 13%,75% 46%,83% 46%,83% 30%,90% 30%,90% 58%,100% 58%,100% 100%,0 100%);
+}
+.hero-inner{max-width:1180px;margin:auto;padding:72px 4.5%;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center;position:relative;z-index:2}
+.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(160,255,212,.65);padding:8px 14px;border-radius:999px;font-size:13px;font-weight:800;background:rgba(0,40,30,.25)}
+.hero h1{font-size:clamp(46px,6vw,76px);line-height:.98;letter-spacing:-2.5px;margin:20px 0 18px}
+.hero h1 span{color:#39e58e}
+.hero p{font-size:18px;max-width:620px;color:#e4f8f0}
+.checks{display:flex;gap:22px;flex-wrap:wrap;margin:22px 0;font-weight:700;font-size:14px}
+.checks span:before{content:"✓";display:inline-grid;place-items:center;width:20px;height:20px;margin-right:7px;border-radius:50%;background:#16c978;color:#063c2d}
+.buttons{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:15px 23px;border-radius:999px;font-weight:800}
+.btn.primary{background:#16c978;color:#053c2e;box-shadow:0 10px 25px rgba(0,0,0,.18)}
+.btn.outline{border:2px solid #fff;color:#fff}
+.hero-card{
+  justify-self:end;max-width:510px;width:100%;border-radius:28px;padding:24px;
+  background:linear-gradient(145deg,rgba(255,255,255,.16),rgba(255,255,255,.05));
+  border:1px solid rgba(255,255,255,.28);box-shadow:0 25px 60px rgba(0,0,0,.2);
+}
+.profile-frame{position:relative;border-radius:22px;overflow:hidden;background:#eaf6f1;min-height:330px}
+.profile-frame img{width:100%;height:390px;object-fit:cover;object-position:center top;display:block}
+.profile-caption{position:absolute;left:18px;right:18px;bottom:18px;padding:15px 18px;border-radius:16px;background:rgba(0,50,38,.84);backdrop-filter:blur(8px)}
+.profile-caption strong{font-size:18px}.profile-caption small{display:block;color:#d8eee7}
+.section{max-width:1180px;margin:auto;padding:76px 4.5%}
+.kicker{color:#079263;text-transform:uppercase;letter-spacing:1.4px;font-weight:900;font-size:13px}
+.section h2{font-size:40px;line-height:1.1;margin:10px 0 12px;letter-spacing:-1px}
+.section-intro{color:var(--muted);max-width:760px;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:18px;padding:25px;
+  box-shadow:0 10px 35px rgba(0,64,50,.07);transition:.2s
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,64,50,.12)}
+.icon{width:45px;height:45px;border-radius:50%;display:grid;place-items:center;background:#dcf8eb;color:#006b4f;font-size:21px;font-weight:900;margin-bottom:17px}
+.card h3{font-size:18px;line-height:1.25;margin-bottom:8px}
+.card p{font-size:14px;color:var(--muted)}
+.compliance{background:linear-gradient(135deg,#effbf5,#fff);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.requirements{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.req{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px}
+.req h3{margin-bottom:12px}.req li{margin:8px 0 0 20px;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.cert{background:#fff;border:1px solid var(--line);border-radius:16px;padding:9px;box-shadow:0 8px 25px rgba(0,60,45,.07)}
+.cert img{width:100%;height:190px;object-fit:cover;border-radius:10px;background:#edf6f2}
+.cert small{display:block;padding:8px 4px;color:var(--muted);font-weight:700}
+.notice{margin-top:20px;padding:15px 18px;border-left:4px solid #0aa66a;background:#effaf5;border-radius:8px;color:#48636b;font-size:14px}
+.contact{
+  background:linear-gradient(135deg,#003f31,#007453);color:#fff;
+  border-radius:28px;padding:45px;display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center
+}
+.contact p{color:#d7eee6}.contact a{color:#fff;font-weight:800}
+.footer{background:#003b2e;color:#d9eee7;padding:38px 4.5%;margin-top:70px}
+.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
+.footer small{color:#a9cbc0}
+@media(max-width:950px){
+  .links{display:none}.hero-inner{grid-template-columns:1fr}.hero-card{justify-self:stretch}
+  .grid{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}
+  .requirements,.contact{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .topbar{font-size:11px}.nav{padding:10px 4%}.brand strong{font-size:16px}
+  .logo{width:43px;height:43px}.hero-inner{padding:55px 5%}.hero h1{font-size:48px}
+  .hero p{font-size:16px}.grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}
+  .section{padding:58px 5%}.section h2{font-size:32px}.profile-frame img{height:330px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span>✉️ abujacacregistrationamocitygit@gmail.com</span>
+  <span>🟢 WhatsApp / Call: 0707 355 2208 &nbsp; • &nbsp; 📍 Abuja, FCT, Nigeria</span>
+</div>
+
+<header class="nav">
+  <a class="brand" href="#home">
+    <div class="logo">CAC</div>
+    <div><strong>Abuja CAC</strong><small>Registration Services</small></div>
+  </a>
+  <nav class="links">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#requirements">CAC Requirements</a>
+    <a href="#compliance">SCUML & Tax</a>
+    <a href="#how">How It Works</a>
+    <a href="#contact">Contact</a>
+    <a class="wa" href="https://wa.me/2347073552208?text=Hello%20Abuja%20CAC%20Registration%20Services%2C%20I%20need%20assistance.">WhatsApp Us</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="skyline"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="badge">✓ CAC Registration Support Services</div>
+      <h1>Abuja CAC<br><span>Registration</span><br>Services</h1>
+      <p>Professional support with Business Name, Company, Incorporated Trustee/NGO and post-registration processes in Nigeria.</p>
+      <div class="checks">
+        <span>Fast Support</span><span>Reliable Guidance</span><span>Transparent Service</span>
+      </div>
+      <div class="buttons">
+        <a class="btn primary" href="https://wa.me/2347073552208?text=Hello%20Abuja%20CAC%20Registration%20Services%2C%20I%20need%20assistance.">Chat on WhatsApp →</a>
+        <a class="btn outline" href="#services">View Services →</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="profile-frame">
+        <img src="profile.jpg" alt="Abuja CAC Registration Services representative"
+             onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(145deg,#dff7eb,#9ddfc5)'">
+        <div class="profile-caption">
+          <strong>Your Success, Our Priority</strong>
+          <small>Professional registration support and guidance.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="kicker">Our Services</div>
+  <h2>Abuja CAC Registration Services</h2>
+  <p class="section-intro">Choose the service you need and contact us for guidance on the current process and applicable fees.</p>
+  <div class="grid">
+    <article class="card"><div class="icon">▣</div><h3>Business Name Registration</h3><p>Support with name availability, proprietor details, documents and submission.</p></article>
+    <article class="card"><div class="icon">▥</div><h3>Limited Liability Company</h3><p>Support with company registration information and required supporting documents.</p></article>
+    <article class="card"><div class="icon">♟</div><h3>NGO / Incorporated Trustee</h3><p>Guidance for trustee details, constitution and other required documents.</p></article>
+    <article class="card"><div class="icon">▤</div><h3>Post-Registration Services</h3><p>Support for eligible changes, certified documents and other post-registration processes.</p></article>
+    <article class="card"><div class="icon">✓</div><h3>SCUML Registration</h3><p>Support for eligible businesses that fall under SCUML-designated categories.</p></article>
+    <article class="card"><div class="icon">₦</div><h3>Tax / TIN Support</h3><p>Guidance with tax registration information, TIN-related processes and applicable tax documentation.</p></article>
+  </div>
+</section>
+
+<section class="section compliance" id="requirements">
+  <div class="kicker">Requirements</div>
+  <h2>CAC Registration Requirements</h2>
+  <p class="section-intro">Requirements vary by registration type. We help you identify the documents and information needed for your application.</p>
+  <div class="requirements">
+    <div class="req"><h3>Business Name</h3><ul><li>Proposed business name</li><li>Proprietor/owner details</li><li>Identification information</li><li>Business address and contact details</li><li>Other information required by the current CAC process</li></ul></div>
+    <div class="req"><h3>Company / Limited Liability</h3><ul><li>Proposed company name</li><li>Directors and shareholders information</li><li>Identification documents</li><li>Registered office information</li><li>Company details and supporting documents</li></ul></div>
+    <div class="req"><h3>Incorporated Trustee / NGO</h3><ul><li>Trustee information</li><li>Constitution and objectives</li><li>Meeting/minutes documentation where applicable</li><li>Required declarations and supporting documents</li></ul></div>
+    <div class="req"><h3>Compliance Support</h3><ul><li>SCUML support for eligible categories</li><li>Tax/TIN-related support</li><li>Tax clearance/compliance guidance where applicable</li><li>Requirements depend on the relevant authority and business type</li></ul></div>
+  </div>
+</section>
+
+<section class="section" id="compliance">
+  <div class="kicker">Additional Compliance</div>
+  <h2>SCUML & Tax Support</h2>
+  <p class="section-intro">SCUML and tax processes are separate from CAC registration and are not automatically required for every business.</p>
+  <div class="grid">
+    <article class="card"><div class="icon">✓</div><h3>SCUML</h3><p>Support for businesses within applicable SCUML-regulated categories and guidance on the relevant documentation.</p></article>
+    <article class="card"><div class="icon">₦</div><h3>TIN / Tax Registration</h3><p>Guidance on tax registration and TIN-related processes through the relevant authority.</p></article>
+    <article class="card"><div class="icon">▤</div><h3>Tax Clearance / Certificate</h3><p>Assistance with understanding applicable tax compliance documentation and processes.</p></article>
+  </div>
+  <div class="notice">We are an independent registration support provider. We are not the Corporate Affairs Commission (CAC), SCUML or a tax authority. Requirements, government fees and processing times can change.</div>
+</section>
+
+<section class="section" id="how">
+  <div class="kicker">How It Works</div>
+  <h2>A simple registration process</h2>
+  <p class="section-intro">Contact us, provide the required information, review the application details, and receive updates through the process.</p>
+  <div class="grid">
+    <article class="card"><div class="icon">1</div><h3>Contact Us</h3><p>Send your request through WhatsApp, phone or email.</p></article>
+    <article class="card"><div class="icon">2</div><h3>Provide Details</h3><p>We explain the relevant information and supporting documents.</p></article>
+    <article class="card"><div class="icon">3</div><h3>Application Support</h3><p>We guide you through the applicable registration process.</p></article>
+    <article class="card"><div class="icon">4</div><h3>Receive Updates</h3><p>We keep you informed about the progress and available documents.</p></article>
+  </div>
+</section>
+
+<section class="section" id="certificates">
+  <div class="kicker">Certificate Gallery</div>
+  <h2>Registration Certificate Examples</h2>
+  <p class="section-intro">Upload only certificates you are authorised to display. Label examples clearly and never present another person's certificate as your own.</p>
+  <div class="gallery">
+    <div class="cert"><img src="certificate1.jpg" alt="Certificate example 1"><small>Certificate Example 1</small></div>
+    <div class="cert"><img src="certificate2.jpg" alt="Certificate example 2"><small>Certificate Example 2</small></div>
+    <div class="cert"><img src="certificate3.jpg" alt="Certificate example 3"><small>Certificate Example 3</small></div>
+    <div class="cert"><img src="certificate4.jpg" alt="Certificate example 4"><small>Certificate Example 4</small></div>
+    <div class="cert"><img src="certificate5.jpg" alt="Certificate example 5"><small>Certificate Example 5</small></div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="contact">
+    <div>
+      <div class="kicker" style="color:#7ff0b8">Contact</div>
+      <h2>Ready to start your registration?</h2>
+      <p>Message us for guidance on the service you need, current requirements and applicable fees.</p>
+    </div>
+    <div>
+      <p>📱 WhatsApp / Call<br><a href="tel:+2347073552208">0707 355 2208</a></p>
+      <p style="margin-top:12px">✉️ Email<br><a href="mailto:abujacacregistrationamocitygit@gmail.com">abujacacregistrationamocitygit@gmail.com</a></p>
+      <p style="margin-top:12px">📍 Abuja, FCT, Nigeria</p>
+      <a class="btn primary" style="margin-top:18px" href="https://wa.me/2347073552208?text=Hello%20Abuja%20CAC%20Registration%20Services%2C%20I%20need%20assistance.">WhatsApp Us →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><strong>Abuja CAC Registration Services</strong><br><small>Professional registration support.</small></div>
+    <small>© 2026 Abuja CAC Registration Services. All rights reserved.</small>
+  </div>
+</footer>
+</body>
+</html>
